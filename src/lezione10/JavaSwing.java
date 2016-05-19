@@ -6,6 +6,7 @@
 package lezione10;
 
 import java.awt.Container;
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -29,7 +30,9 @@ public class JavaSwing {
 
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container cp = f.getContentPane();
+        cp.setLayout(new FlowLayout(FlowLayout.CENTER));
         JButton jb = new JButton("Invia");
+        jb.setBounds(10, 10, 80, 25);
         cp.add(jb);
         f.setVisible(true);
     }
