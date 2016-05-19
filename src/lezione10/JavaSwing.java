@@ -16,6 +16,7 @@ public class JavaSwing {
      */
     public static void main(String[] args) {
         System.out.println("prova swing ...");
+        System.out.println("modifica...");
     }
     
 }
