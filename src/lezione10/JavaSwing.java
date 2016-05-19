@@ -5,6 +5,10 @@
  */
 package lezione10;
 
+import java.awt.Container;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
 /**
  *
  * @author tss
@@ -18,19 +22,16 @@ public class JavaSwing {
         System.out.println("prova swing ...");
         System.out.println("modifica...");
         // https://github.com/oscarfc/java858
+
+        JFrame f = new JFrame("Esempio Swing");
+
+        f.setBounds(100, 100, 300, 200);
+
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Container cp = f.getContentPane();
+        JButton jb = new JButton("Invia");
+        cp.add(jb);
+        f.setVisible(true);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
